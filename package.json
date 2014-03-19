@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pushover-notifications": "^0.1.8",
+    "socket.io-client": "^0.9.16"
+  }
+}
