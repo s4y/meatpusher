@@ -32,7 +32,11 @@ c.on('message', function(m) {
 
 	if (!message) return;
 
-	if (message.match(re).map(function(s){
+	var match = message.match(re);
+
+	if (!match) return;
+
+	if (match.map(function(s){
 		return s.toLowerCase();
 	}).reduce(function(found, word) {
 		return found || (word in watchwords);
